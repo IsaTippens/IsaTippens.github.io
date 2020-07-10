@@ -1,12 +1,50 @@
-<html>
+<!DOCTYPE html>
 
 <head>
     <title>The beeps and the boops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
-    <h1>...And we have liftoff!🚀</h1>
-    <p>Hello World!</p>
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <div class="container">
+                    <h1 class="title">...and we have liftoff!🚀</h1>
+                    <p class="subtitle">Hello World!</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <h1 class="title">What I Do</h1>
+                    <!--<p class="subtitle">What Nintendon't</p>-->
+                    <p>I code</p>
+                    <p>I do the read</p>
+                    <p>But most importantly</p>
+                    <p>[redacted]</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                Isa Tippens &copy; <span id="year"></span> 🐧
+            </div>
+        </footer>
+    </section>
+
 </body>
+
+
+<script>
+    let year = new Date().getFullYear();
+    if (year > 2020)
+        document.getElementById("year").innerHTML = "2020-" + new Date().getFullYear();
+    else
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
 
 </html>
