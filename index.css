@@ -1,9 +1,15 @@
 body, html {
-    height: 100%;
+    min-height: 100vh;
 }
+
+.title {
+    color:white;
+}
+
+
 body {
     background-image: url('images/subtlepatterns/webb.png');
     background-color: aliceblue;
-    background-size: 25;
+    background-size: 20%;
     background-blend-mode: multiply;
 }
