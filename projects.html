@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="index.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="currentyear.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
         </div>
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">What I Have Done 💻🧪</h1>
+                <h1 class="title">What I Have Done 💻🔬</h1>
                 <p>Content goes here</p>
             </div>
         </div>
@@ -54,15 +55,6 @@
     </section>
 
 </body>
-
-
-<script>
-    let year = new Date().getFullYear();
-    if (year > 2020)
-        document.getElementById("year").innerHTML = "2020-" + new Date().getFullYear();
-    else
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
 
 
 </html>

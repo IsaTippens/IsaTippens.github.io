@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="background-pat.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="currentyear.js"></script>
 </head>
 
 <body>
@@ -72,15 +73,6 @@
     </section>
 
 </body>
-
-
-<script>
-    let year = new Date().getFullYear();
-    if (year > 2020)
-        document.getElementById("year").innerHTML = "2020-" + new Date().getFullYear();
-    else
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
 
 
 </html>

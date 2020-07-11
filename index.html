@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="background-pat.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="currentyear.js"></script>
 </head>
 
 <body>
@@ -15,8 +16,9 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <h1 class="title navbar-item">
-                            it
+                        <h1 class="title navbar-item" onmouseover="this.innerHTML='isatippens';"
+                            onmouseout="this.innerHTML='it';">
+                            <span>it</span>
                         </h1>
                         <span class="navbar-burger" data-target="navbarMenuHeroA"
                             onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
@@ -91,7 +93,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <!--<p class="subtitle">What Nintendon't</p>-->
-                                &gt; <a href="http://34.105.160.217/">Minecraft Server</a>
+                                &gt; <a href="mc_server.html">Minecraft Server</a>
                                 <p>&gt; Valorant</p>
                                 <p>&gt; Pokemon</p>
                                 <p>&gt; All things nintendo</p>
@@ -111,15 +113,5 @@
     </section>
 
 </body>
-
-
-<script>
-    let year = new Date().getFullYear();
-    if (year > 2020)
-        document.getElementById("year").innerHTML = "2020-" + new Date().getFullYear();
-    else
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-
 
 </html>
