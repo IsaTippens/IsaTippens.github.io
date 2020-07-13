@@ -6,4 +6,8 @@ function setYear() {
         document.getElementById("year").innerHTML = year
 }
 
-window.onload = setYear;
+function loadItAll() {
+    setYear()
+}
+
+window.onload = loadItAll

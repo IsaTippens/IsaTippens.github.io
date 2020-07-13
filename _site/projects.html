@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html" http-equiv="Content-Type" />
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Isa Tippens" name="author">
+    <meta content="Personal Site" name="description">
+
+    <title> &mdash; Projects</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href=http://localhost:4000/assets/css/index.css>
+    <link rel="stylesheet" href=http://localhost:4000/assets/css/custom.css>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src=http://localhost:4000/assets/js/currentyear.js></script>
+
+</head>
+
+<body>
+    <section class="hero is-fullheight is-bold" id="main-section">
+        <script>
+            let date = new Date();
+            let doc = document.getElementById("main-section")
+            if (date.getMonth() == 5 && date.getDate() == 1) {
+                doc.classList.add("is-light")
+            }
+            else {
+                doc.classList.add("is-dark")
+            }
+        </script>
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <h1 class="title navbar-item">
+                            <span>it</span>
+                        </h1>
+                        <span class="navbar-burger" data-target="navbarMenuHeroA"
+                            onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        
+                        <div class="navbar-end">
+                            <a class="navbar-item"
+                                href="/">
+                                Home
+                            </a>
+                            <a class="navbar-item is-active "
+                                href="projects.html">
+                                Projects
+                            </a>
+                            <a class="navbar-item"
+                                href="about.html">
+                                About Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <p class="title is-1 is-spaced">What I Have Done 💻🔬</p>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">Github <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <div class="card">
+                                <header class="card-header">
+                                    <h1 class="card-header-title">Flutter Clock</h1>
+                                </header>
+                                <div class="card-content">
+                                    <p>Flutter had a comp</p>
+                                    <p class="">I had to be a part</p>
+                                        <img src="http://localhost:4000/assets/gif/clock.gif" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">YouTube <i class="fab fa-youtube fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <p class="subtitle" is-4="">Content goes here</p>
+                        </div>
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">Miscellaneous <i class="fas fa-dice fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <div class="card">
+                                <header class="card-header">
+                                    <h1 class="card-header-title">Minecraft Server</h1>
+                                </header>
+                                <div class="card-content">
+                                    <p>Using Google Cloud, I put together a minecraft server running Paper</p>
+                                    <p class="">Click the link below to see an overview of the world!</p>
+                                    <a class="button is-primary pb-2 pt-2" href="mc-server.html">
+                                        <i class="fas fa-globe fa-fw " aria-hidden="true"></i> Minecraft World</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <h1 class="card-header-title">Sauce😋</h1>
+                            </header>
+                            <div class="card-content">
+                                <p>The source for this website is hosted on Github</p>
+                                <a class="button is-primary" href="https://www.github.com/isatippens/isatippens.github.io">
+                                    <i class="fab fa-github fa-fw" aria-hidden="true"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero-foot">
+            <div class=" content has-text-centered is-fullwidth">
+                <p>Isa Tippens &copy; <span id="year"></span> 🐧</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

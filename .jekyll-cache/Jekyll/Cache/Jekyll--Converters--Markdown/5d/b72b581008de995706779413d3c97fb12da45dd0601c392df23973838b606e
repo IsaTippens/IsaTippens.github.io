@@ -1,0 +1,55 @@
+I"n<div class="container">
+                <p class="title is-1 is-spaced">What I Have Done 💻🔬</p>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">Github <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <div class="card">
+                                <header class="card-header">
+                                    <h1 class="card-header-title">Flutter Clock</h1>
+                                </header>
+                                <div class="card-content">
+                                    <p>Flutter had a comp</p>
+                                    <p class="">I had to be a part</p>
+                                        <img src="http://localhost:4000/assets/gif/clock.gif" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">YouTube <i class="fab fa-youtube fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <p class="subtitle" is-4="">Content goes here</p>
+                        </div>
+                        <div class="container pb-4 pt-4">
+                            <p class="title is-2">Miscellaneous <i class="fas fa-dice fa-fw" aria-hidden="true"></i>
+                            </p>
+                            <div class="card">
+                                <header class="card-header">
+                                    <h1 class="card-header-title">Minecraft Server</h1>
+                                </header>
+                                <div class="card-content">
+                                    <p>Using Google Cloud, I put together a minecraft server running Paper</p>
+                                    <p class="">Click the link below to see an overview of the world!</p>
+                                    <a class="button is-primary pb-2 pt-2" href="mc-server.html">
+                                        <i class="fas fa-globe fa-fw " aria-hidden="true"></i> Minecraft World</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <h1 class="card-header-title">Sauce😋</h1>
+                            </header>
+                            <div class="card-content">
+                                <p>The source for this website is hosted on Github</p>
+                                <a class="button is-primary" href="https://www.github.com/isatippens/isatippens.github.io">
+                                    <i class="fab fa-github fa-fw" aria-hidden="true"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+:ET
