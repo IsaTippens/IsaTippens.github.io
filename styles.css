@@ -1,4 +1,7 @@
-html,
-body {
-    height: 100%;
+.divBody {
+    height: 100vh;
+}
+
+.cover-container {
+  max-width: 42em;
 }
