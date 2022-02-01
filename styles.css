@@ -5,3 +5,11 @@
 .cover-container {
   max-width: 42em;
 }
+
+h1, h2 {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.lead {
+  font-family: 'Noto Sans Mono', monospace;
+}
