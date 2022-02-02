@@ -1,7 +1,7 @@
 function setYear() {
     let year = new Date().getFullYear();
-    if (year > 2020)
-        document.getElementById("year").innerHTML = "2020-" + year
+    if (year > 2022)
+        document.getElementById("year").innerHTML = "2022-" + year
     else
         document.getElementById("year").innerHTML = year
 }
@@ -21,7 +21,7 @@ function setCoding() {
 }
 
 function loadItAll() {
-    //setYear();
+    setYear();
     setAge();
     setCoding();
 }

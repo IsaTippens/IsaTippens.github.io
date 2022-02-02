@@ -6,10 +6,42 @@
   max-width: 42em;
 }
 
+
 h1, h2 {
   font-family: 'Noto Sans Mono', monospace;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 .lead {
   font-family: 'Noto Sans Mono', monospace;
+  font-size: 1em;
+}
+
+.footer-text {
+}
+
+.instabloom {
+  background: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #d6249f 60%, #285aeb 90%);
+  background-clip: text;
+  color: transparent;
+}
+
+.insta2bloom {
+  background: radial-gradient(circle at 30% 107%,#1f1f1f 0%, #efefef 5%, #1f1f1f 60%, #efefef 90%);
+  background-clip: text;
+  color: transparent;
+}
+
+.twitterbloom {
+  background: #1DA1F2;
+  background-clip: text;
+  color: transparent;
+}
+
+.iconButton {
+  text-decoration: none;
 }
