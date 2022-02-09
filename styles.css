@@ -15,8 +15,10 @@
   .iconButton {
     color: #f1f1f1;
   }
+  .link-secondary {
+    color: #23aaf2;
+  }
 }
-
 
 h1, h2 {
   font-family: 'Noto Sans Mono', monospace;
