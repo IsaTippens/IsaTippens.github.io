@@ -13,7 +13,7 @@ function getYearsSince(day, month, year) {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 function setAge() {
-    document.getElementById("age").innerHTML = getYearsSince(1, 6, 2001)
+    document.getElementById("age").innerHTML = getYearsSince(1, 5, 2001)
 }
 
 function setCoding() {
