@@ -32,20 +32,16 @@ class LinkText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final linkColor = Theme.of(context).textTheme.button;
     return Container(
       child: RichText(
         text: TextSpan(
-          style: GoogleFonts.notoSansMono(
-            fontWeight: FontWeight.w300,
-            fontSize: 16.0,
-            height: 1.5,
-            color: Colors.black,
-          ),
+          style: Theme.of(context).textTheme.bodyText1,
           children: [
             TextSpan(text: (text != null) ? "$text: " : null),
             TextSpan(
               text: (clickableText != null) ? "$clickableText" : null,
-              style: TextStyle(color: Colors.blueAccent),
+              style: linkColor,
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
                   launchUrl(this.uri).then((value) => null);

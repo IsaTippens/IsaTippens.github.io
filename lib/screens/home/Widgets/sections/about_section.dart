@@ -62,11 +62,7 @@ class _AboutSectionState extends State<AboutSection>
     return Container(
       child: Text(
         '${ageAnimation.value} y/o ${adjective} of ${yearsAnimation.value} years.',
-        style: GoogleFonts.notoSansMono(
-          fontWeight: FontWeight.w300,
-          fontSize: 16.0,
-          height: 1.5,
-        ),
+        style: Theme.of(context).textTheme.bodyText1,
       ),
     );
   }

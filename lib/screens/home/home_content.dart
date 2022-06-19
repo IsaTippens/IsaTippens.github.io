@@ -46,9 +46,10 @@ class _HomeContentState extends State<HomeContent>
 
   @override
   Widget build(BuildContext context) {
+    final boxColor = Theme.of(context).primaryColor;
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.blueAccent, width: 4),
+        border: Border.all(color: boxColor, width: 4),
       ),
       margin: const EdgeInsets.all(20),
       child: Padding(

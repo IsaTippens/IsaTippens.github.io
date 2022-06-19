@@ -13,22 +13,20 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
 
-    return SafeArea(
-      child: Center(
-        child: SingleChildScrollView(
-          controller: ScrollController(initialScrollOffset: 0.0),
-          child: Column(
-            children: [
-              SizedBox(
-                width: 600,
-                child: HomeContent(),
-              ),
-              SizedBox(
-                width: 600,
-                child: LinksBox(),
-              ),
-            ],
-          ),
+    return Center(
+      child: SingleChildScrollView(
+        controller: ScrollController(initialScrollOffset: 0.0),
+        child: Column(
+          children: [
+            SizedBox(
+              width: 600,
+              child: HomeContent(),
+            ),
+            SizedBox(
+              width: 600,
+              child: LinksBox(),
+            ),
+          ],
         ),
       ),
     );

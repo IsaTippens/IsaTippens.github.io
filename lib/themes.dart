@@ -1,31 +1,56 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-ThemeData lightTheme = ThemeData.light().copyWith();
-ThemeData darkTheme = ThemeData.dark().copyWith(backgroundColor: Colors.black);
-
-class GloblaTheme {
-  static final TextTheme _text = TextTheme(
-    headline1: GoogleFonts.notoSansMono(
-      fontSize: 96,
-      fontWeight: FontWeight.w300,
+ThemeData lightTheme = ThemeData.light().copyWith(
+  backgroundColor: Colors.white,
+  primaryColor: Colors.blueAccent,
+  textTheme: GoogleFonts.notoSansMonoTextTheme(
+    const TextTheme(
+      headline1: TextStyle(
+        color: Colors.black87,
+        fontWeight: FontWeight.w300,
+        fontSize: 24.0,
+        height: 1.5,
+      ),
+      bodyText1: TextStyle(
+        color: Colors.black87,
+        fontWeight: FontWeight.w300,
+        fontSize: 16.0,
+        height: 1.5,
+      ),
+      button: TextStyle(
+        color: Colors.blueAccent,
+        fontWeight: FontWeight.w300,
+        fontSize: 16.0,
+        height: 1.5,
+      ),
     ),
-    headline2: GoogleFonts.notoSansMono(
-      fontSize: 60,
-      fontWeight: FontWeight.w300,
+  ),
+);
+ThemeData darkTheme = ThemeData.dark().copyWith(
+  backgroundColor: Colors.black,
+  scaffoldBackgroundColor: Colors.black,
+  primaryColor: Colors.orangeAccent,
+  textTheme: GoogleFonts.notoSansMonoTextTheme(
+    const TextTheme(
+      headline1: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w300,
+        fontSize: 24.0,
+        height: 1.5,
+      ),
+      bodyText1: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w300,
+        fontSize: 16.0,
+        height: 1.5,
+      ),
+      button: TextStyle(
+        color: Colors.orangeAccent,
+        fontWeight: FontWeight.w300,
+        fontSize: 16.0,
+        height: 1.5,
+      ),
     ),
-    bodyText1: GoogleFonts.notoSansMono(
-      fontSize: 16,
-      fontWeight: FontWeight.w300,
-    ),
-    bodyText2: GoogleFonts.notoSansMono(
-      fontSize: 14,
-      fontWeight: FontWeight.w300,
-    ),
-  );
-
-  static final TextStyle header = _text.headline1!;
-  static final TextStyle subHeader = _text.headline2!;
-  static final TextStyle body = _text.bodyText1!;
-  static final TextStyle inline = _text.bodyText2!;
-}
+  ),
+);
