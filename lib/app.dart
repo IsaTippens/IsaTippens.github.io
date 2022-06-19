@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/themes.dart';
 import 'package:portfolio/screens/home/home.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -9,10 +10,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'IT',
-      theme: lightTheme,
-      darkTheme: darkTheme,
-
-      home: const Body(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        '/': (context) => Body(),
+      },
     );
   }
 }
@@ -22,12 +24,10 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bgColor = Theme.of(context).brightness == Brightness.light
-        ? Colors.white
-        : Colors.black;
     return Scaffold(
-      backgroundColor: bgColor,
-      body: Home(),
+      body: SafeArea(
+        child: Home(),
+      ),
     );
   }
 }
