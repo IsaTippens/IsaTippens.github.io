@@ -18,6 +18,15 @@
     animation: anim-float 1.2s infinite;
 }
 
+@media (prefers-color-scheme: dark) {
+    .dot {
+        background-color: orange;
+    }
+    body{
+        background-color: #000
+    }
+}
+
 .dot:nth-child(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;

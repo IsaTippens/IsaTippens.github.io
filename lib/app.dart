@@ -48,7 +48,6 @@ class _AppState extends State<App> {
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,
-      themeMode: ThemeMode.dark,
       initialRoute: "/",
       routes: {
         '/': (context) {
