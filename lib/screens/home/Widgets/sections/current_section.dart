@@ -21,7 +21,7 @@ class CurrentSection extends StatelessWidget {
             color: Colors.black,
           ),
           children: [
-            TextSpan(text: "Current Final Year student at the "),
+            TextSpan(text: "Final Year student at the "),
             TextSpan(
               text: "University of the Western Cape",
               style: TextStyle(color: Colors.blueAccent),

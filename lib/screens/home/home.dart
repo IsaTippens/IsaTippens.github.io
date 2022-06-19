@@ -16,6 +16,7 @@ class Home extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: SingleChildScrollView(
+          controller: ScrollController(initialScrollOffset: 0.0),
           child: Column(
             children: [
               SizedBox(
