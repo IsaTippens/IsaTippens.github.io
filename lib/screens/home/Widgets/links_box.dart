@@ -22,23 +22,29 @@ class LinksBox extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            LinkText(
-              text: "Github",
-              clickableText: "IsaTippens",
+            LinkText.https(
+              label: "Github",
+              clickableContent: "IsaTippens",
               url: "www.github.com",
               path: "/IsaTippens",
             ),
-            LinkText(
-              text: "Instagram",
-              clickableText: "@issssaaaaaaaaaaaaaahhhhhhhhhhh",
+            LinkText.https(
+              label: "Instagram",
+              clickableContent: "@issssaaaaaaaaaaaaaahhhhhhhhhhh",
               url: "www.instagram.com",
               path: "/issssaaaaaaaaaaaaaahhhhhhhhhhh",
             ),
-            LinkText(
-                text: "Discord",
-                clickableText: "issssaaaaaaaaaaaaaaaaaaaah#7761",
-                url: "discordapp.com",
-                path: "users/265935549745856533"),
+            LinkText.https(
+              label: "Discord",
+              clickableContent: "issssaaaaaaaaaaaaaaaaaaaah#7761",
+              url: "discordapp.com",
+              path: "users/265935549745856533",
+            ),
+            LinkText.email(
+              label: "Email",
+              clickableContent: "isatippens2@gmail.com",
+              address: "isatippens2@gmail.com",
+            ),
           ],
         ),
       ),

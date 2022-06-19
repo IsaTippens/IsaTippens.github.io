@@ -4,13 +4,32 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LinkText extends StatelessWidget {
-  const LinkText(
-      {this.text, this.clickableText, this.url, this.path, Key? key});
+  final String text;
+  final String clickableText;
+  final Uri uri;
 
-  final String? text;
-  final String? clickableText;
-  final String? url;
-  final String? path;
+  factory LinkText(String label, String clickableContent, Uri uri) {
+    return LinkText._internal(label, clickableContent, uri);
+  }
+
+  factory LinkText.email(
+      {String? label, String? clickableContent, String? address}) {
+    final Uri u = Uri(scheme: 'mailto', path: address);
+    label ??= "";
+    clickableContent ??= "";
+    return LinkText(label, clickableContent, u);
+  }
+
+  factory LinkText.https(
+      {String? label, String? clickableContent, String? url, String? path}) {
+    final Uri u = Uri(scheme: 'https', host: url, path: path);
+    label ??= "";
+    clickableContent ??= "";
+    return LinkText(label, clickableContent, u);
+  }
+
+  LinkText._internal(this.text, this.clickableText, this.uri);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,9 +48,7 @@ class LinkText extends StatelessWidget {
               style: TextStyle(color: Colors.blueAccent),
               recognizer: TapGestureRecognizer()
                 ..onTap = () {
-                  if (url != null && path != null) {
-                    launchUrl(Uri.https(url!, path!)).then((value) => null);
-                  }
+                  launchUrl(this.uri).then((value) => null);
                 },
             ),
           ],
