@@ -11,10 +11,10 @@ class LanguageSection extends StatelessWidget {
         children: [
           Text('Worked with C#, Python, Go, Javascript, Dart and Java.',
               style: textStyle),
-          Text(
-            'Learnt Rust, C, C++, Solidity.',
-            style: textStyle,
-          ),
+
+
+
+
         ],
       ),
     );
